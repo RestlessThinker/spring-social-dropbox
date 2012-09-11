@@ -3,3 +3,7 @@ Considering moving to gradle, but until then, the primary way to build this
 project is using Maven
 
 mvn clean install
+
+
+#### AMF3 Serialization ####
+Added needed getters and setters for BlazeDS Serialization.  The other way is to implement Externalizable interface to read/write inputs directly

@@ -13,19 +13,19 @@ import java.util.List;
  */
 public class Metadata implements Serializable {
 	private static final long serialVersionUID = 1L;
-	private final String size;
-	private final int bytes;
-	private final boolean isDir;
-	private final boolean isDeleted;
-	private final String rev;
-	private final String hash;
-	private final boolean thumbExists;
-	private final String icon;
-	private final Date modified;
-	private final String root;
-	private final String path;
-	private final String mimeType;
-	private final List<Metadata> contents;
+	private String size;
+	private int bytes;
+	private boolean isDir;
+	private boolean isDeleted;
+	private String rev;
+	private String hash;
+	private boolean thumbExists;
+	private String icon;
+	private Date modified;
+	private String root;
+	private String path;
+	private String mimeType;
+	private List<Metadata> contents;
 	
 	public Metadata(String size, int bytes, boolean isDir, boolean isDeleted,
 			String rev, String hash, boolean thumbExists, String icon,
@@ -96,5 +96,57 @@ public class Metadata implements Serializable {
 	
 	public List<Metadata> getContents() {
 		return contents;
+	}
+
+	public void setSize( String size ) {
+	    this.size = size;
+	}
+
+	public void setBytes( int bytes ) {
+	    this.bytes = bytes;
+	}
+
+	public void setIsDir( boolean isDir ) {
+	    this.isDir = isDir;
+	}
+
+	public void setIsDeleted( boolean isDeleted ) {
+	    this.isDeleted = isDeleted;
+	}
+
+	public void setRev( String rev ) {
+	    this.rev = rev;
+	}
+
+	public void setHash( String hash ) {
+	    this.hash = hash;
+	}
+
+	public void setThumbExists( boolean thumbExists ) {
+	    this.thumbExists = thumbExists;
+	}
+
+	public void setIcon( String icon ) {
+	    this.icon = icon;
+	}
+
+	public void setModified( Date modified ) {
+	    this.modified = modified;
+	}
+
+	public void setRoot( String root ) {
+	    this.root = root;
+	}
+
+	public void setPath( String path ) {
+	    this.path = path;
+	}
+
+	public void setMimeType( String mimeType ) {
+	    this.mimeType = mimeType;
+	}
+
+	public void setContents( List<Metadata> contents ) {
+	    this.contents = contents;
 	}
 }
